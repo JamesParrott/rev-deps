@@ -7,12 +7,19 @@ Find the names of all the projects that depend on another project (all on PyPi),
 ## Table of Contents
 
 - [Installation](#installation)
+- [Usage](#usage)
 - [License](#license)
 
 ## Installation
 
 ```console
 pip install rev-deps
+```
+
+## Usage
+
+```console
+rev-deps <project_name>
 ```
 
 ## License
