@@ -28,6 +28,8 @@ def _rev_deps(project: str) -> Iterator[str]:
     while True:
         url = f'https://{domain}/{json_api_sub_folder}'
         response = requests.get(url)
+        
+        response.raise_for_status()
 
         yield from _project_names_from_wheelodex_response(response)
 
